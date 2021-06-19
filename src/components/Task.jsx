@@ -5,7 +5,7 @@ const Task = ({task}) => {
     return (
         <div className="task-container">
             <div className="task-icon">
-                <img src={task.icon} />
+                <img src={task.icon} alt="" />
             </div>
             <div className="task-content">
                 {task.title}
