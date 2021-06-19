@@ -18,7 +18,7 @@ Projeto estará disponível em: [http://localhost:3000](http://localhost:3000)
 
 # Funcionalidades
 
-- Adicionar itens na lista (OK)
+- Adicionar itens na lista com stage (OK)
 - Remover itens da lista (...)
 - Marcar como feito (...)
 - Salvar em localstorage (...)
