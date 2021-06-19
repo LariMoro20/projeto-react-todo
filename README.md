@@ -3,6 +3,7 @@
 Projeto desenvolvido para disciplina de Frameworks Web da faculdade.
 Para visualizar o layout: (...)
 ![imagem](https://github.com/LariMoro20/projeto-react-todo/blob/master/image.png)
+<img src="https://github.com/LariMoro20/projeto-react-todo/blob/master/image.png" width="350" title="hover text">
 
 ## Instalação
 
