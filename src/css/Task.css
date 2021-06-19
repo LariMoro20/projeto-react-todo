@@ -1,0 +1,62 @@
+.task-container {
+    background-color: #444;
+    margin: 8px 0;
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 5px;
+    justify-content: flex-start;
+    color: #eee;
+    align-items: center;
+}
+
+.task-cover {
+    background-image: url('https://cdn.pixabay.com/photo/2020/05/30/09/53/todo-lists-5238324_1280.jpg');
+    background-size: cover;
+    height: 200px;
+}
+
+.task-icon {
+    border-radius: 100%;
+    margin: 10px;
+    padding: 10px;
+    background-color: chartreuse;
+}
+
+.task-icon img {
+    width: 20px;
+}
+
+.task-content {}
+
+.task_add-container {
+    display: flex;
+    padding: 10px 10px 10px 0px;
+    width: 100%;
+}
+
+.task_add-container-input {
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    flex: 2;
+    display: flex;
+    background-color: #444;
+    color: #eee;
+    font-size: 16px;
+}
+
+.task_add-container-button {
+    flex: 1;
+    margin-left: 10px;
+    background-color: chartreuse;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    color: #444;
+    font-weight: bold;
+    cursor: pointer;
+}
