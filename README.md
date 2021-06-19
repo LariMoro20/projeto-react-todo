@@ -16,7 +16,16 @@ No diretório do projeto rodar
 
 Projeto estará disponível em: [http://localhost:3000](http://localhost:3000)
 
-# Funcionalidades
+# Conceitos e Funcionalidades
+
+## Conceitos
+
+- Componentização
+- Javascript ES6
+- CSS B.E.M
+- Uso de manipulações de state
+
+## Funcionalidades
 
 - Adicionar itens na lista com stage (OK)
 - Remover itens da lista (...)
