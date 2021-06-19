@@ -1,6 +1,6 @@
 # Lista de Afazeres
 
-Projeto desenvolvido para disciplina de Frameworks Web da faculdade.
+Projeto desenvolvido em React.JS para disciplina de Frameworks Web da faculdade.
 
 Para visualizar o layout: https://projeto-react-todo.vercel.app/
 
