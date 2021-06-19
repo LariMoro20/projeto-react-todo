@@ -1,8 +1,10 @@
 # Lista de Afazeres
 
 Projeto desenvolvido para disciplina de Frameworks Web da faculdade.
+
 Para visualizar o layout: https://projeto-react-todo.vercel.app/
-<img src="https://github.com/LariMoro20/projeto-react-todo/blob/master/image.png" width="350" title="hover text" align="center">
+
+<img src="https://github.com/LariMoro20/projeto-react-todo/blob/master/image.png" width="350" title="Project image">
 
 ## Instalação
 
