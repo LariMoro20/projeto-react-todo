@@ -8,6 +8,13 @@
   border-radius: 10px;
 }
 
+.section_footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
 .App {
   text-align: center;
 }

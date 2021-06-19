@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import Tasks from './components/Tasks'
-import './App.css'
 import AddTask from './components/AddTask'
+import Footer from './components/Footer'
+import './App.css'
+
 const App = () => {
     const [tasks, setTasks] = useState([
         {
@@ -32,6 +34,7 @@ const App = () => {
             <div className="task-cover" />
             <AddTask handleTaskAdd={handleTaskAdd} />
             <Tasks tasks={tasks} />
+            <Footer />
         </div>
     )
 };
