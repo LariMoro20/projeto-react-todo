@@ -9,16 +9,23 @@ const App = () => {
         {
             id: 1,
             title: 'Estudar react',
-            icon: 'https://cdn.pixabay.com/photo/2017/04/06/09/16/arrow-2207748_1280.png',
+            icon: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png',
             complete: false
         },
         {
             id: 2,
             title: 'Estudar vue',
-            icon: 'https://cdn.pixabay.com/photo/2017/04/06/09/16/arrow-2207748_1280.png',
+            icon: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png',
             complete: true
         }
     ]);
+    const handleTaskComplete = (taskId) => {
+        const newTasks = tasks.map(task => {
+            if (task.id === taskId) return { ...task, complete: !task.complete }
+            return task;
+        })
+        setTasks(newTasks);
+    }
     const handleTaskAdd = (taskTitle) => {
         const newTasks = [...tasks, {
             title: taskTitle,
@@ -33,7 +40,7 @@ const App = () => {
         <div className="container">
             <div className="task-cover" />
             <AddTask handleTaskAdd={handleTaskAdd} />
-            <Tasks tasks={tasks} />
+            <Tasks tasks={tasks} handleTaskComplete={handleTaskComplete} />
             <Footer />
         </div>
     )
