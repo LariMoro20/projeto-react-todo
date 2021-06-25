@@ -31,7 +31,7 @@ const App = () => {
             title: taskTitle,
             id: tasks.length + 1,
             complete: false,
-            icon: 'https://cdn.pixabay.com/photo/2017/04/06/09/16/arrow-2207748_1280.png'
+            icon: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png'
         }];
         setTasks(newTasks);
     }
