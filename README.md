@@ -24,6 +24,7 @@ Projeto estará disponível em: [http://localhost:3000](http://localhost:3000)
 - Javascript ES6
 - CSS B.E.M
 - Uso de manipulações de state
+- SPA com react-router-dom
 
 ## Funcionalidades
 

@@ -18,6 +18,7 @@
 .task-icon {
     width: 30px;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .task-buttons {

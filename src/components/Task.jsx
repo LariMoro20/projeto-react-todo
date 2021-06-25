@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Task.css";
+import { CgClose, CgInfo, CgCheck } from "react-icons/cg";
 
 const Task = ({ task, handleTaskComplete, handleTaskDelete }) => {
   const handleTaskCheck = (id) => {
@@ -20,18 +21,18 @@ const Task = ({ task, handleTaskComplete, handleTaskDelete }) => {
     >
       <div className="task-content">{task.title}</div>
       <div className="task-buttons flex">
-        <img
-          src={task.icon}
-          alt=""
+        <div className="task-icon flex" onClick={() => handleTaskDel(task.id)}>
+          <CgInfo />
+        </div>
+        <div
           className="task-icon flex"
           onClick={() => handleTaskCheck(task.id)}
-        />
-        <img
-          alt=""
-          className="task-icon flex"
-          src="https://findicons.com/files/icons/1262/amora/256/delete.png"
-          onClick={() => handleTaskDel(task.id)}
-        />
+        >
+          <CgCheck />
+        </div>
+        <div className="task-icon flex" onClick={() => handleTaskDel(task.id)}>
+          <CgClose />
+        </div>
       </div>
     </div>
   );
