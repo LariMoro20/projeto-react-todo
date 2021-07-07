@@ -9,13 +9,13 @@ const App = () => {
         {
             id: 1,
             title: 'Estudar react',
-            link: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png',
+            link: 'https://reactjs.org/',
             complete: false
         },
         {
             id: 2,
             title: 'Estudar vue',
-            link: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png',
+            link: 'https://vuejs.org/',
             complete: true
         }
     ]);
@@ -42,7 +42,7 @@ const App = () => {
 
     return (
         <div className="container">
-            <div className="task-cover" />
+            <div className="task_cover" />
             <AddTask handleTaskAdd={handleTaskAdd} />
             <Tasks tasks={tasks} handleTaskComplete={handleTaskComplete} handleTaskDelete={handleTaskDelete} />
             <Footer />

@@ -1,29 +1,41 @@
-.task-container {
+.task_container {
     background-color: #444;
     margin: 8px 0;
-    display: flex;
     padding: 15px 20px;
     border-radius: 5px;
+    display: flex;
     justify-content: space-between;
     color: #eee;
     align-items: center;
 }
 
-.task-cover {
+.task_container-content {
+    width: 100%;
+}
+
+.task_content-title {
+    font-weight: bold;
+}
+
+.task_container-link a {
+    color: chartreuse;
+}
+
+.task_container-buttons {
+    justify-content: space-between;
+    border-radius: 100%;
+}
+
+.task_cover {
     background-image: url('https://cdn.pixabay.com/photo/2020/05/30/09/53/todo-lists-5238324_1280.jpg');
     background-size: cover;
     height: 200px;
 }
 
-.task-icon {
+.task_container-icon {
     width: 30px;
     cursor: pointer;
     font-size: 24px;
-}
-
-.task-buttons {
-    justify-content: space-between;
-    border-radius: 100%;
 }
 
 .flex {
@@ -37,6 +49,7 @@
 
 .task_add-container-input {
     height: 40px;
+    margin: 0 5px;
     padding: 0 10px;
     border-radius: 5px;
     border: none;
@@ -44,11 +57,11 @@
     background-color: #444;
     color: #eee;
     font-size: 16px;
-    margin-bottom: 5px;
 }
 
 .task_add-container_itens {
-    margin-bottom: 20px;
+    display: flex;
+    margin-bottom: 10px;
     width: 100%;
 }
 
