@@ -1,16 +1,13 @@
 import React from "react";
 import "../css/Task.css";
-import { CgClose, CgInfo, CgCheck } from "react-icons/cg";
-
+import Dialog from "./Dialog";
+import { CgClose, CgCheck } from "react-icons/cg";
 const Task = ({ task, handleTaskComplete, handleTaskDelete }) => {
   const handleTaskCheck = (id) => {
     handleTaskComplete(id);
   };
   const handleTaskDel = (id) => {
     handleTaskDelete(id);
-  };
-  const handleTaskSee = (id) => {
-    alert(id);
   };
 
   return (
@@ -29,12 +26,7 @@ const Task = ({ task, handleTaskComplete, handleTaskDelete }) => {
         </div>
       </div>
       <div className="task_container-buttons flex">
-        <div
-          className="task_container-icon flex"
-          onClick={() => handleTaskSee(task.id)}
-        >
-          <CgInfo />
-        </div>
+        <Dialog task={task} />
         <div
           className="task_container-icon flex"
           onClick={() => handleTaskCheck(task.id)}

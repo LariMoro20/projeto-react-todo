@@ -59,6 +59,18 @@
     font-size: 16px;
 }
 
+.task_add-container-textarea {
+    height: 59px;
+    margin: 0 5px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    background-color: #444;
+    color: #eee;
+    font-size: 16px;
+}
+
 .task_add-container_itens {
     display: flex;
     margin-bottom: 10px;

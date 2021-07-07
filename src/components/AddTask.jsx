@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 const AddTask = ({ handleTaskAdd }) => {
-  const [inputTitle, setInpuTitle] = useState("");
-  const [inputLink, setInpuLink] = useState("");
-
+  const [inputTitle, setInputTitle] = useState("");
+  const [inputLink, setInputLink] = useState("");
+  const [inputDesc, setInputDesc] = useState("");
   const onChangeValueTitle = (e) => {
-    setInpuTitle(e.target.value);
+    setInputTitle(e.target.value);
   };
   const onChangeValueLink = (e) => {
-    setInpuLink(e.target.value);
+    setInputLink(e.target.value);
+  };
+  const onChangeValueDesc = (e) => {
+    setInputDesc(e.target.value);
   };
   const handleTaskAddClick = () => {
-    handleTaskAdd(inputTitle, inputLink);
+    handleTaskAdd(inputTitle, inputLink, inputDesc);
   };
   return (
     <div className="task_add-container">
@@ -30,6 +33,15 @@ const AddTask = ({ handleTaskAdd }) => {
           type="text"
         />
       </div>
+      <div className="task_add-container_itens">
+        <textarea
+          onChange={onChangeValueDesc}
+          value={inputDesc}
+          className="task_add-container-textarea"
+          placeholder="Descrição"
+        />
+      </div>
+
       <button
         onClick={handleTaskAddClick}
         className="task_add-container-button"
