@@ -19,7 +19,10 @@ const Task = ({ task, handleTaskComplete, handleTaskDelete }) => {
           : { borderLeft: "none" }
       }
     >
-      <div className="task-content">{task.title}</div>
+      <div className="task-content">
+        {task.title}
+        <br /> <a href={task.link}>{task.link}</a>
+      </div>
       <div className="task-buttons flex">
         <div className="task-icon flex" onClick={() => handleTaskDel(task.id)}>
           <CgInfo />

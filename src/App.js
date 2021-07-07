@@ -9,13 +9,13 @@ const App = () => {
         {
             id: 1,
             title: 'Estudar react',
-            icon: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png',
+            link: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png',
             complete: false
         },
         {
             id: 2,
             title: 'Estudar vue',
-            icon: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png',
+            link: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png',
             complete: true
         }
     ]);
@@ -30,12 +30,12 @@ const App = () => {
         const newTasks = tasks.filter(task => task.id !== taskId)
         setTasks(newTasks);
     }
-    const handleTaskAdd = (taskTitle) => {
+    const handleTaskAdd = (taskTitle, taskLink) => {
         const newTasks = [...tasks, {
-            title: taskTitle,
             id: tasks.length + 1,
+            title: taskTitle,
+            link: taskLink,
             complete: false,
-            icon: 'https://www.ajetur.com.br/wp-content/uploads/2018/09/sign-check-icon.png'
         }];
         setTasks(newTasks);
     }
