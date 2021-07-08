@@ -26,10 +26,11 @@ Projeto estará disponível em: [http://localhost:3000](http://localhost:3000)
 - CSS B.E.M
 - Uso de manipulações de state
 - SPA com react-router-dom
+- Uso de componentes Material UI (https://material-ui.com/pt/components/dialogs/)
 
 ## Funcionalidades
 
 - Adicionar itens na lista com stage (OK)
-- Remover itens da lista (...)
-- Marcar como feito (...)
+- Remover itens da lista (OK)
+- Marcar como feito (OK)
 - Salvar em localstorage (...)
