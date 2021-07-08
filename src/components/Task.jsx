@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Task.css";
 import Dialog from "./Dialog";
+import Button from "@material-ui/core/Button";
 import { CgClose, CgCheck } from "react-icons/cg";
 const Task = ({ task, handleTaskComplete, handleTaskDelete }) => {
   const handleTaskCheck = (id) => {
@@ -27,18 +28,21 @@ const Task = ({ task, handleTaskComplete, handleTaskDelete }) => {
       </div>
       <div className="task_container-buttons flex">
         <Dialog task={task} />
-        <div
-          className="task_container-icon flex"
+        <Button
+          variant="outlined"
+          className="task_container-icon button-check flex"
           onClick={() => handleTaskCheck(task.id)}
         >
           <CgCheck />
-        </div>
-        <div
-          className="task_container-icon flex"
+        </Button>
+
+        <Button
+          variant="outlined"
+          className="task_container-icon button-danger flex"
           onClick={() => handleTaskDel(task.id)}
         >
           <CgClose />
-        </div>
+        </Button>
       </div>
     </div>
   );

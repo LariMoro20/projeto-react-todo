@@ -69,6 +69,7 @@
     background-color: #444;
     color: #eee;
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 .task_add-container_itens {
@@ -87,4 +88,24 @@
     color: #444;
     font-weight: bold;
     cursor: pointer;
+}
+
+.button-check {
+    color: #17c500 !important;
+    border: 1px solid #17c500 !important;
+    background-color: #4a614f !important;
+}
+
+.button-info {
+    background-color: #4a4f61 !important;
+}
+
+.button-danger {
+    color: #c50000 !important;
+    border: 1px solid #c50000 !important;
+    background-color: #614a4a !important;
+}
+
+.MuiButton-outlined {
+    margin: 3px;
 }
