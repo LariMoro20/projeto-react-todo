@@ -1,5 +1,4 @@
 import React from "react";
-const year = new Date().getFullYear();
 const Footer = () => {
   return (
     <footer className="section_footer">
@@ -8,7 +7,7 @@ const Footer = () => {
         href="https://github.com/LariMoro20/projeto-react-todo"
         style={{ textDecoration: "none", color: "white" }}
       ><br></br>
-        {year} &copy; Larissa Santos
+        Larissa Santos
         <img
           src="https://image.flaticon.com/icons/png/512/25/25231.png"
           alt=""
